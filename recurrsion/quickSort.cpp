@@ -5,15 +5,15 @@ using namespace std;
 
 
 int partition(int arr[], int s, int e){
-    int piviot = arr[s];
-    int cnt =0;
+    int piviot = arr[s]; //last element pointer
+    int cnt =0; 
     for(int i= s+1; i<=e;i++ ){
         if(arr[i]<=piviot){
             cnt++;
         }
     }
     //place piviot at right place position
-    int pivotindex =  s+cnt;
+    int pivotindex =  s+cnt;  //start + count 
     swap(arr[pivotindex],arr[s]);
 
     //left and right wala part sambhal lenge
