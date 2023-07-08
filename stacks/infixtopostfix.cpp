@@ -45,7 +45,7 @@
              st.pop(); 
          }
          st.pop();
-     }
+     }   
 
      ///if operator is scanned 
      else{
