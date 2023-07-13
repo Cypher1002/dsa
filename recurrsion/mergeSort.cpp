@@ -11,17 +11,16 @@ void merge(int * arr, int s, int e){
     int *first = new int [len1];
     int *second  = new int[len2];
 
+//first array 
     int mainarrayIndex = s;
     for(int i =0; i<len1;i++){
         first[i] = arr[mainarrayIndex++];
-
     }
 
-
+//second array
       mainarrayIndex  = mid+1;
     for(int i =0; i<len2;i++){
-        second[i] = arr[mainarrayIndex++];
-        
+        second[i] = arr[mainarrayIndex++];      
     }
 
     //merge 
@@ -43,6 +42,10 @@ void merge(int * arr, int s, int e){
         while(index1 <len1){
           arr[mainarrayIndex++] =second[index2++]; 
       }
+
+
+      delete [] first;
+      delete []second;
 }
 
 void  mergeSort(int *arr, int s , int e){
