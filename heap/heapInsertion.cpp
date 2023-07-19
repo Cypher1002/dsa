@@ -87,7 +87,7 @@ void heapify(int arr[],int n , int i){
             largest = left;
         } 
         if(right <n && arr[largest]< arr[right]){
-            lasgest = right;
+            largest = right;
         }
 
         //check largest element updated or not 
