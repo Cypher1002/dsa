@@ -35,4 +35,4 @@ priority_queue<int, vector<int> , greater<int>>mini;
             }
         }\
         return mini.top();
-  }
+  } 
